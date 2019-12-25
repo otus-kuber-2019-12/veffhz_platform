@@ -1,16 +1,12 @@
-FROM python:3.6.0-alpine
+FROM python:3.7-alpine
 
 RUN addgroup -S user && adduser -S user -G user -u 1001
 USER user
 
-WORKDIR /server
-
-ADD server.py /server
-
-RUN pip install flask==1.1.1 --user
+WORKDIR /app
 
 ADD homework.html /app/
 
-EXPOSE 8000
+EXPOSE 8000/tcp
 
-ENTRYPOINT ["python3", "server.py"]
+ENTRYPOINT ["python3", "-m", "http.server", "8000", "--directory", "/app"]
