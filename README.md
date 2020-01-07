@@ -16,10 +16,10 @@ Task #2: kubernetes controllers
 
 Task #3: kubernetes security
 
-* Created ServiceAccount's bob (cluster-admin role).
-* Created ServiceAccount's dave (no access).
+* Created ServiceAccount bob (cluster-admin role).
+* Created ServiceAccount dave (no access).
 * Created namespaces prometheus, dev.
-* Created ServiceAccount's carol (ns prometheus).
+* Created ServiceAccount carol (ns prometheus).
 * Created role pod-reader (get, list, watch).
-* Created ServiceAccount's jane (ns dev, admin role).
-* Created ServiceAccount's ken (ns dev, view role).
+* Created ServiceAccount jane (ns dev, admin role).
+* Created ServiceAccount ken (ns dev, view role).
