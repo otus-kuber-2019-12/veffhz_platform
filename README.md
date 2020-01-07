@@ -14,3 +14,12 @@ Task #2: kubernetes controllers
 * Created Deployment manifest with different strategy for paymentservice.
 * Created Daemonset manifest for node-exporter with control-plane nodes.
 
+Task #3: kubernetes security
+
+* Created ServiceAccount's bob (cluster-admin role).
+* Created ServiceAccount's dave (no access).
+* Created namespaces prometheus, dev.
+* Created ServiceAccount's carol (ns prometheus).
+* Created role pod-reader (get, list, watch).
+* Created ServiceAccount's jane (ns dev, admin role).
+* Created ServiceAccount's ken (ns dev, view role).
